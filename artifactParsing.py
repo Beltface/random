@@ -17,8 +17,6 @@ class Cortex(object):
 	def __init__(self):
 		self.es = Elasticsearch(['127.0.0.1'], port=9200)
 		self.api = Api('http://<CORTEX URL>', <CORTEX KEY>)
-
-		self.hive_key = Nirah().config["OGMA"]["key"] 
 		self.hive_api = TheHiveApi('<HIVE URL>', <HIVE KEY>, cert=False)
 
 
